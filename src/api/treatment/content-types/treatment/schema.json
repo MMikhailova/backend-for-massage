@@ -4,7 +4,8 @@
   "info": {
     "singularName": "treatment",
     "pluralName": "treatments",
-    "displayName": "Treatment"
+    "displayName": "Treatment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,17 +23,15 @@
       "unique": false
     },
     "imageMain": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "price": {
-      "type": "integer"
+      ]
     },
     "type": {
       "type": "enumeration",
@@ -42,6 +41,12 @@
         "health coaching"
       ],
       "required": true
+    },
+    "prices": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::price.price",
+      "mappedBy": "treatments"
     }
   }
 }
