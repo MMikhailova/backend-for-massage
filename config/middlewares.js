@@ -14,18 +14,7 @@ module.exports = [
       },
     },
   },
-  {
-    name: "strapi::cors",
-    config: {
-      origin: [
-        "https://phenomenal-cactus-95e326.netlify.app",
-        "http://localhost:3000/"
-      ],
-      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
-      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
-      keepHeaderOnError: true,
-    },
-  },
+  "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
@@ -35,3 +24,15 @@ module.exports = [
   "strapi::public",
 ];
 
+  // {
+  //   name: "strapi::cors",
+  //   config: {
+  //     origin: [
+  //       "https://phenomenal-cactus-95e326.netlify.app",
+  //       "http://localhost:3000/"
+  //     ],
+  //     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+  //     headers: ["Content-Type", "Authorization", "Origin", "Accept"],
+  //     keepHeaderOnError: true,
+  //   },
+  // },
