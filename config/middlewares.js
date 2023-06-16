@@ -17,13 +17,12 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      enabled: true,
-      headers: "*",
       origin: [
-        "https://phenomenal-cactus-95e326.netlify.app/",
-        "http://bevibrant.be/",
-        "www.bevibrant.be/",
+        "https://phenomenal-cactus-95e326.netlify.app"
       ],
+      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
+      keepHeaderOnError: true,
     },
   },
   "strapi::poweredBy",
