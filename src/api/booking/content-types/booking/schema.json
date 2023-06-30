@@ -4,25 +4,26 @@
   "info": {
     "singularName": "booking",
     "pluralName": "bookings",
-    "displayName": "Booking"
+    "displayName": "Booking",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "url": {
-      "type": "email",
-      "unique": true,
-      "required": true
-    },
     "type": {
       "type": "enumeration",
       "enum": [
         "massage",
         "yoga",
         "health coaching"
-      ]
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
     }
   }
 }
