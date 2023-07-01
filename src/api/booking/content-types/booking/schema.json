@@ -12,17 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
     "type": {
       "type": "enumeration",
       "enum": [
         "massage",
         "yoga",
-        "health coaching"
+        "coaching"
       ],
-      "required": true
-    },
-    "url": {
-      "type": "string",
       "required": true
     }
   }
