@@ -12,17 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "minutes": {
-      "type": "integer"
+    "duration": {
+      "type": "integer",
+      "default": 30,
+      "required": true
     },
     "priceEuro": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "treatments": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::treatment.treatment",
       "inversedBy": "prices"
+    },
+    "package": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
