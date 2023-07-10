@@ -38,7 +38,7 @@
       "enum": [
         "massage",
         "yoga",
-        "health coaching"
+        "coaching"
       ],
       "required": true
     },
