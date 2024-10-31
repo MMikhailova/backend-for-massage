@@ -47,6 +47,14 @@
       "relation": "manyToMany",
       "target": "api::price.price",
       "mappedBy": "treatments"
+    },
+    "section": {
+      "type": "enumeration",
+      "enum": [
+        "facial",
+        "ayurvedic",
+        "relaxation"
+      ]
     }
   }
 }
