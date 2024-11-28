@@ -51,9 +51,9 @@
     "section": {
       "type": "enumeration",
       "enum": [
-        "facial",
-        "ayurvedic",
-        "relaxation"
+        "Facials",
+        "Body Massage",
+        "Specials"
       ]
     }
   }
